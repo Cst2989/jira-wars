@@ -1,0 +1,11 @@
+<div class="container">
+    <h2 class="title">JIRA WARS!</h2>
+    <div class="teams row">
+        <div class="team-hp col-md-3" *ngFor="let team of teams">
+            <div class="image"><img [src]="team.image" alt=""></div>
+            <div class="name">{{ team.team_name }}</div>
+            <div class="desc">{{ team.team_description }}</div>
+            <a class="btn btn-primary" id="nav-home" [routerLink]="'/teams/' + team.id">Join the fight</a>
+        </div>
+    </div>
+</div>
